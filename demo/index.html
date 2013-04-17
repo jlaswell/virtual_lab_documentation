@@ -95,6 +95,28 @@
 						<img class="full-slide" src="diagnostics.png" alt="Diagnostics panel.">
 					</div>
 				</section>
+				<section>
+					<div class="content">
+						<h3 class="slide-title">Two Tab Approach</h3>
+						<hr>
+						<p>After seeing one of the audiology professors use the program, there was a clear separation from when she was testing to when she was diagnosing. We also noticed which particular parts of the application she was using at each stage. In order to reduce clutter of windows on the screen, we decided to make a tab for each stage with only the necessary items on the screen at any point in time.</p>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<h3 class="slide-title">Panel Approach</h3>
+						<hr>
+						<p>In order to keep all portions of the program locked within their position on their specific tab, we chose to make all objects that were previously of the Form class into objects of the Panel class. To do this, we went through the existing code changing a few things here and there to eliminate all traces of a Form and create a Panel instead. The challenge here was having to look up what methods exist within the Panel class and compare them to methods of the Form class. Most lines could be left as they were, but some methods of the Form class do not exist within the Panel class and thus we had to find the closest thing we could use and try to replace it. Otherwise, remove that line of code all together. This was time consuming and included many error messages for calling methods that don't exist.</p>
+					</div>
+				</section>
+				<section>
+					<div class="content">
+						<h3 class="slide-title">TableLayoutPanel Format for Tabs</h3>
+						<hr>
+						<p>We ran into issues with setting the position of the Panels within the Tabs and found out about the TableLayoutPanel which allows you to set the number of rows and columns to divide a space into as well as set the size of each. We used this in the Tabs to allow us to simply fill a section of the table with a Panel.</p>
+						<p>We were even considering using these within the Panels to help us align and re-size all the elements of the Panels. Or perhaps making the Panel itself into a TableLayoutPanel. This can be discussed next semester and worked on as soon as possible.</p>
+					</div>
+				</section>
 			</article>
 		</div>
 
