@@ -36,7 +36,7 @@ a#project-partner {
 }
 a#project-partner:hover {
 	/*color: #222824;*/
-	text-shadow: 2px 1px 2px #CBCBCB;
+	text-shadow: -2px -1px 4px #222824;
 }
 .controls {
 	height: 100%;
@@ -55,10 +55,10 @@ a.control-btn {
   opacity: 0.4;
 }
 a#btn-next {
-	left: 1100px;
+	left: 1160px;
 }
 a#btn-prev {
-	right: 1100px;
+	right: 1160px;
 }
 .content p {
 	font-size: 1.24em;
@@ -67,10 +67,14 @@ ul {
 	list-style: none;
 }
 .lead {
-	font-size: 1.76em;
+	font-size: 1.24em;
 }
 .sub-lead {
 	font-size: 0.96em;
+}
+.full-slide {
+	margin-top: 1em;
+	max-width: 760px;
 }
 
 ul li > ul {
@@ -150,6 +154,7 @@ hr.blank {
 h1 {
 	color: #8CC775;
 	font-family: 'Julius Sans One', sans-serif;
+	font-smooth: auto;
 
 	/* Fix thin font rendering on Windows */
 	font-size: 14em;
@@ -160,7 +165,7 @@ h1 {
 	transform: scale(0.5);
 
 	font-weight: normal;
-	text-shadow: 0 0 1px #8CC775, 0 0 1px #8CC775, 0 0 1px #8CC775;
+	text-shadow: 0 0 1px #8CC775, 0 0 1px #8CC775, 0 0 1px #8CC775, 2px 2px 4px #010101;
 	z-index: 20;
 	/*margin-top: 1em;*/
 	height: 200px;
@@ -188,6 +193,7 @@ h3.slide-title {
 	color: white;
 	z-index: 30;
 	margin-top: 14px;
+	text-shadow: 1px 1px 2px #010101;
 	font-family: 'Julius Sans One', sans-serif;
 	font-size: 2.24em;
 	color: white;
